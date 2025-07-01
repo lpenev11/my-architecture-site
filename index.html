@@ -28,7 +28,9 @@
       margin: 10px 0 0 0;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
+      font-weight: 600;
+      font-size: 18px;
     }
 
     nav ul li {
@@ -38,12 +40,12 @@
     nav ul li a {
       color: white;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
+      transition: color 0.3s ease;
     }
 
     nav ul li a:hover {
       text-decoration: underline;
+      color: #ff9900;
     }
 
     section {
@@ -58,6 +60,8 @@
     section h2 {
       color: #1e2a38;
       margin-bottom: 15px;
+      border-bottom: 2px solid #1e2a38;
+      padding-bottom: 5px;
     }
 
     /* Галерия */
@@ -70,9 +74,9 @@
     }
 
     .gallery img {
-      max-width: 300px;
-      width: 100%;
-      height: auto;
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: transform 0.3s ease;
@@ -81,6 +85,12 @@
 
     .gallery img:hover {
       transform: scale(1.05);
+    }
+
+    /* Контактна секция */
+    #contact p {
+      margin: 5px 0;
+      font-weight: 600;
     }
 
     footer {
@@ -100,14 +110,14 @@
 
   <nav>
     <ul>
-      <li><a href="#">Начало</a></li>
-      <li><a href="#">Услуги</a></li>
-      <li><a href="#">Проекти</a></li>
-      <li><a href="#">Контакт</a></li>
+      <li><a href="#about">За нас</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#projects">Проекти</a></li>
+      <li><a href="#contact">Контакт</a></li>
     </ul>
   </nav>
 
-  <section>
+  <section id="about">
     <h2>За нас</h2>
     <p>Ние предлагаме проектиране, интериорен дизайн и визуализация на сгради и помещения.</p>
   </section>
@@ -125,20 +135,20 @@
     <h2>Наши проекти</h2>
     <p>Тук ще видите някои от нашите реализирани и текущи проекти.</p>
     <div class="gallery">
-      <img src="images/05B303F9-9B56-44DA-AC34-27555A14931F.jpeg" alt="Проект 1" />
-      <img src="images/5094F4D2-EEEF-4D12-8A4B-CBA3FC6D1318.png" alt="Проект 2" />
-      <img src="images/73D8911F-6EF7-4BF7-A1FE-3F116AC3B10.png" alt="Проект 3" />
-      <img src="images/C06F391F-D265-4FB8-A483-7E991EA58408.jpeg" alt="Проект 4" />
-      <img src="images/E5858683-8D54-4824-A4AB-7F91151AA6DF.jpeg" alt="Проект 5" />
-      <img src="images/FA7ED962-D17A-4224-BD82-47D99709031D.jpeg" alt="Проект 6" />
+      <img src="05B303F9-9B56-44DA-AC34-27555A14931F.jpeg" alt="Проект 1" />
+      <img src="5094F4D2-EEEF-4D12-8A4B-CBA3FC6D1318.png" alt="Проект 2" />
+      <img src="73D8911F-6EF7-4BF7-A1FE-3F116AC3B10.png" alt="Проект 3" />
+      <img src="C06F391F-D265-4FB8-A483-7E991EA58408.jpeg" alt="Проект 4" />
+      <img src="E5858683-8D54-4824-A4AB-7F91151AA6DF.jpeg" alt="Проект 5" />
+      <img src="FA7ED962-D17A-4224-BD82-47D99709031D.jpeg" alt="Проект 6" />
     </div>
   </section>
 
   <section id="contact">
     <h2>Свържете се с нас</h2>
-    <p>Email: luboslavpenev2000@gmail.com</p>
-    <p>Телефон: 0892311501</p>
-    <p>Контактно лице: Любослав Пенев</p>
+    <p>Email: <a href="mailto:luboslavpenev2000@gmail.com">luboslavpenev2000@gmail.com</a></p>
+    <p>Телефон: <a href="tel:+359892311501">089 231 1501</a></p>
+    <p>Личен контакт: Любослав Пенев</p>
   </section>
 
   <footer>
